@@ -1,4 +1,6 @@
 package com.remondis.remap;
+// Java Program to Handle Divide By Zero Exception
+import java.io.*;
 
 import static com.remondis.remap.Lang.denyNull;
 import static com.remondis.remap.MappingConfiguration.OMIT_FIELD_DEST;
@@ -484,3 +486,14 @@ public class AssertConfiguration<S, D> {
     this.verificaions.add(verification);
   }
 }
+
+class GFG {
+	public static void main(String[] args)
+	{
+		int a = 6;
+		int b = 0;
+		System.out.print(a / b);
+		// this line Throw ArithmeticException: / by zero
+	}
+}
+
